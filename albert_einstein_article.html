@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discoveries - Albert Einstein: Revolutionizing Physics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+      color: #333333;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #006769;
+      color: #ffffff;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555555;
+    }
+
+    .navbar a.right {
+      float: right;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      width: 60%;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      line-height: 1.5;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .preview-box {
+      background-color: #ffffff;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .preview-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .preview-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #006769;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 20px;
+    }
+
+    .comments {
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .comment p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Discoveries</h1>
+  <p>Unveiling the Wonders of Science and Math Every Week</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="historical-figures.html">Historical Figures</a>
+  <a href="historical-breakthroughs.html">Historical Breakthroughs</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="content-wrapper">
+  <div class="main-content">
+    <h2>Albert Einstein: Revolutionizing Physics</h2>
+  
+    <p>Albert Einstein, born in 1879 in Ulm, Germany, was a theoretical physicist whose work drastically changed our understanding of physics. Best known for his theory of relativity, Einstein's contributions to science have had a lasting impact on the way we understand the universe.</p>
+  
+    <img src="articleimages/einstein.jpg" alt="Albert Einstein" />
+    <p style="text-align: center; font-style: italic;">Albert Einstein in his later years</p>
+  
+    <p>Einstein's most famous equation, E=mc², established the relationship between mass and energy. His work on the photoelectric effect, which demonstrated the particle nature of light, earned him the Nobel Prize in Physics in 1921. Einstein's theories not only revolutionized physics but also influenced various other fields of science and technology.</p>
+  
+  </div>
+
+  <div class="sidebar">
+    <div class="preview-box" onclick="location.href='stephen_hawking_article.html';">
+      <img src="articleimages/stephen_hawking.jpg" alt="Stephen Hawking" />
+      <p><strong>Stephen Hawking</strong></p>
+      <p>Explored the origins of the universe and black holes.</p>
+    </div>
+    <div class="preview-box" onclick="location.href='robert_oppenheimer_article.html';">
+      <img src="articleimages/oppenheimer.jpg" alt="J. Robert Oppenheimer" />
+      <p><strong>J. Robert Oppenheimer</strong></p>
+      <p>The father of the atomic bomb.</p>
+    </div>
+    <div class="preview-box" onclick="location.href='thomas_eddison_article.html';">
+      <img src="articleimages/edison.jpg" alt="Thomas Edison" />
+      <p><strong>Thomas Edison</strong></p>
+      <p>Prolific inventor of the phonograph and electric light.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>The Curious Minds</h2>
+  <p>Join us every week for new insights into the world of science and math.</p>
+</div>
+
+</body>
+</html>

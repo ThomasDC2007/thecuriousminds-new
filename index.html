@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Curious Minds - Your Weekly Science & Math Newspaper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+      color: #333333;
+    }
+
+    .header {
+      padding: 20px;
+      background: #006769;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 80px; /* Adjust size as needed */
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555555;
+    }
+
+    .navbar a.right {
+      margin-left: auto; /* Align "Contact" link to the right */
+    }
+
+    .main-content {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .article {
+      width: 30%;
+      margin: 20px 0;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .article:hover {
+      transform: scale(1.05);
+    }
+
+    .article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .article-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .article-description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      padding: 0 10px 10px 10px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #006769;
+      color: #ffffff;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    /* Styles for the newsletter sign-up form */
+    .newsletter {
+      padding: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+
+    .newsletter h2 {
+      margin-top: 0;
+    }
+
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #006769;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .newsletter button:hover {
+      background-color: #004c4d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html">
+    <img src="images/logo.png" alt="The Curious Minds Logo" class="logo">
+  </a>
+  <div>
+    <h1>The Curious Minds</h1>
+    <p>Your Weekly Science & Math Newspaper</p>
+  </div>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="historical-figures.html">Historical Figures</a>
+  <a href="historical-breakthroughs.html">Historical Breakthroughs</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="main-content">
+  <div class="article">
+    <a href="about_us.html">
+      <img src="images/ourmission.jpg" alt="Our Mission" />
+      <div class="article-title">About Us</div>
+      <div class="article-description">Welcome to The Curious Minds, your weekly gateway to the latest discoveries, historical milestones, and engaging exercises across the realm of science. Our mission is to inspire and inform curious minds from 14 years old through university-level students, fostering a deeper understanding and appreciation of the scientific world.</div>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="latest_discoveries.html">
+      <img src="images/newdiscoveries.jpg" alt="Latest Discoveries" />
+      <div class="article-title">Latest Discoveries</div>
+      <div class="article-description">Stay updated with our curated selection of the most intriguing discoveries and advancements in science. Each week, we bring you breakthroughs from diverse fields such as astronomy, biology, physics, and beyond.</div>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="math_challenges.html">
+      <img src="images/mathquestion.jpg" alt="Math Challenges" />
+      <div class="article-title">Math Challenges</div>
+      <div class="article-description">Sharpen your mathematical prowess with our tailored challenges designed for different age groups, from foundational concepts to complex problems for university-level students.</div>
+    </a>
+  </div>
+</div>
+
+<!-- Newsletter Sign-Up Section -->
+<div class="newsletter">
+  <h2>Subscribe to our Newsletter</h2>
+  <form id="subscribeForm" action="#" method="POST">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<div class="footer">
+  <h2>The Curious Minds</h2>
+  <p>Join us every week for new insights into the world of science and math.</p>
+</div>
+
+<!-- JavaScript for handling form submission and retrieving subscribed emails -->
+<script>
+  // Function to save email to local storage (replace with server-side storage)
+  function saveEmail(email) {
+    // You can modify this to send the email to a server-side script or save to a database
+    let currentEmails = localStorage.getItem('subscribedEmails');
+    if (!currentEmails) {
+      currentEmails = [];
+    } else {
+      currentEmails = JSON.parse(currentEmails);
+    }
+
+    currentEmails.push(email);
+
+    localStorage.setItem('subscribedEmails', JSON.stringify(currentEmails));
+  }
+
+  // Function to retrieve subscribed emails from local storage and log them
+  function logSubscribedEmails() {
+    let subscribedEmails = localStorage.getItem('subscribedEmails');
+    if (subscribedEmails) {
+      subscribedEmails = JSON.parse(subscribedEmails);
+      console.log('Subscribed Emails:', subscribedEmails);
+    }
+  }
+
+  // Attach event listener to the form submit event
+  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const email = document.getElementById('email').value;
+
+    // Save the email to local storage
+    saveEmail(email);
+
+    // Optionally, you can redirect or show a thank you message
+    alert('Thank you for subscribing!');
+
+    // Clear the form input
+    document.getElementById('email').value = '';
+
+    // Log subscribed emails (optional)
+    logSubscribedEmails();
+  });
+
+  // Call this function to log subscribed emails on page load (optional)
+  logSubscribedEmails();
+</script>
+
+</body>
+</html>
