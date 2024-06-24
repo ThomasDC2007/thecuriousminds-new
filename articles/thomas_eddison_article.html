@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discoveries - Thomas Edison: The Prolific Inventor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+      color: #333333;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #006769;
+      color: #ffffff;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555555;
+    }
+
+    .navbar a.right {
+      float: right;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      width: 60%;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      line-height: 1.5;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .preview-box {
+      background-color: #ffffff;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .preview-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .preview-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #006769;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 20px;
+    }
+
+    .comments {
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .comment p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Discoveries</h1>
+  <p>Unveiling the Wonders of Science and Math Every Week</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="historical-figures.html">Historical Figures</a>
+  <a href="historical-breakthroughs.html">Historical Breakthroughs</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="content-wrapper">
+  <div class="main-content">
+    <h2>Thomas Edison: The Prolific Inventor</h2>
+  
+    <p>Thomas Edison, born in 1847 in Milan, Ohio, was an extraordinary inventor whose work has had a profound impact on the modern world. With over 1,000 patents to his name, Edison's innovations include the phonograph, the motion picture camera, and perhaps most famously, the practical electric light bulb.</p>
+  
+    <img src="articleimages/edison.jpg" alt="Thomas Edison" />
+    <p style="text-align: center; font-style: italic;">Thomas Edison in his laboratory</p>
+  
+    <p>One of Edison's key contributions was the establishment of the first industrial research lab, which became a model for future innovation and development. His ability to turn ideas into practical applications not only transformed industries but also laid the groundwork for the technological advances of the 20th century and beyond.</p>
+  
+  </div>
+
+  <div class="sidebar">
+    <div class="preview-box" onclick="location.href='stephen_hawking_article.html';">
+      <img src="articleimages/stephen_hawking.jpg" alt="Stephen Hawking" />
+      <p><strong>Stephen Hawking</strong></p>
+      <p>Explored the origins of the universe and black holes.</p>
+    </div>
+    <div class="preview-box" onclick="location.href='albert_einstein_article.html';">
+      <img src="articleimages/einstein.jpg" alt="Albert Einstein" />
+      <p><strong>Albert Einstein</strong></p>
+      <p>Revolutionized physics with the theory of relativity.</p>
+    </div>
+    <div class="preview-box" onclick="location.href='robert_oppenheimer_article.html';">
+      <img src="articleimages/oppenheimer.jpg" alt="J. Robert Oppenheimer" />
+      <p><strong>J. Robert Oppenheimer</strong></p>
+      <p>The father of the atomic bomb.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>The Curious Minds</h2>
+  <p>Join us every week for new insights into the world of science and math.</p>
+</div>
+
+</body>
+</html>
